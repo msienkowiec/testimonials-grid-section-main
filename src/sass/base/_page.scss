@@ -25,7 +25,6 @@ body {
   .testimonial-grid {
     max-width: 35rem;
     gap: 1.75rem;
-    margin: 4.5rem 1.5rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     'testimonial-1 testimonial-1'
@@ -38,8 +37,6 @@ body {
 @media (min-width: 900px) {
   .testimonial-grid {
     max-width: 60rem;
-    gap: 1.75rem;
-    margin: 4.5rem 1.5rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
     'testimonial-1 testimonial-1 testimonial-2 '
@@ -51,8 +48,6 @@ body {
 @media (min-width: 1140px) {
   .testimonial-grid {
     max-width: 69.5rem;
-    gap: 1.75rem;
-    margin: 7rem 1.5rem auto;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
     'testimonial-1 testimonial-1 testimonial-2 testimonial-5'
