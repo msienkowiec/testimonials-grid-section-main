@@ -1,0 +1,87 @@
+@use '../abstracts/' as *;
+
+.testimonial {
+  border-radius: .5rem;
+  padding: 1.5rem 2rem;
+  font-family: $ff-primary;
+  font-size: $fs-main;
+
+  &__author {
+    display: flex;
+    gap: 1rem;    
+  }
+
+  &__picture {
+    border: 2px solid $clr-Light-gray;
+    border-radius: 50%;
+    max-width: 2rem;
+  }
+
+  &__name {
+    color: $clr-Light-grayish-blue;
+    font-weight: $fw-medium;
+    line-height: 1.2;
+  }
+
+  &__status {
+    color: $clr-Light-grayish-blue;
+    font-weight: $fw-medium;
+    line-height: 1.2;
+    opacity: .5;
+  }
+
+  &__title {
+    color: $clr-Light-grayish-blue;
+    font-weight: $fw-semiBold;
+    line-height: 1.3;
+    margin-top: 1rem;
+  }
+
+  &__description {
+    color: $clr-Light-gray;
+    font-weight: $fw-medium;
+    line-height: 1.4;
+    margin-top: 1em;
+    opacity: .7;
+  }
+
+
+}
+
+.testimonial:first-child {
+  background-color: $clr-Moderate-violet;
+  background-image: url(../assets/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 12%;
+  color: $clr-White;
+}
+
+.testimonial:nth-child(2) {
+  background-color: $clr-Very-dark-grayish-blue;
+  color: $clr-White;
+}
+
+.testimonial:is(:nth-child(3), :last-child) {
+  background-color: $clr-White;
+  box-shadow: $clr-Light-gray 20px 30px 29px -20px;
+  .testimonial__name {
+    color: $clr-Very-dark-grayish-blue;
+  }
+  .testimonial__status {
+    color: $clr-Very-dark-grayish-blue;
+  }
+  .testimonial__title {
+    color: $clr-Very-dark-grayish-blue;
+  }
+  .testimonial__description {
+    color: $clr-Very-dark-grayish-blue;
+  }
+}
+
+.testimonial:nth-child(4) {
+  background-color: $clr-Very-dark-blackish-blue;
+  color: $clr-White;
+  .testimonial__picture {
+    border-color: $clr-Moderate-violet;
+  }
+}
